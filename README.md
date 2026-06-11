@@ -13,6 +13,45 @@ Para iniciar o seu trabalho, siga estes passos:
 
 ---
 
+## Execução Local com Docker
+
+O ambiente de desenvolvimento foi configurado para rodar sem instalar Node.js
+diretamente na máquina hospedeira.
+
+Para subir o projeto localmente:
+
+```bash
+docker compose up --build
+```
+
+Depois, acesse:
+
+```text
+http://localhost:8080
+```
+
+O diretório do projeto é montado como volume dentro do contêiner, permitindo
+hot reload ao editar os arquivos locais.
+
+Também é possível validar o projeto com npm:
+
+```bash
+npm install
+npm run lint
+npm run build
+```
+
+## CI/CD
+
+O workflow em `.github/workflows/main.yml` executa:
+
+- `lint`: análise estática com ESLint.
+- `build`: compilação do site estático com Vite.
+- `deploy`: publicação no GitHub Pages após merge na branch `main`.
+
+Após a primeira execução do workflow no GitHub Actions, os checks `lint` e
+`build` poderão ser selecionados como obrigatórios no ruleset da branch `main`.
+
 ## 1. Objetivo
 Desenvolver e publicar um currículo profissional ou portfólio pessoal utilizando o GitHub Pages. O projeto deve demonstrar o domínio de ferramentas de conteinerização, automação de pipeline CI/CD e governança de código via fluxos de trabalho estruturados, mesmo em um ambiente de desenvolvimento individual.
 
