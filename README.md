@@ -16,6 +16,10 @@ A branch `main` está protegida por ruleset no GitHub. A configuração exige
 integração por Pull Request e aprovação dos checks automatizados `lint` e
 `build` antes do merge.
 
+Evidência da configuração aplicada:
+
+![Ruleset de proteção da branch main](docs/branch-protection-ruleset.jpeg)
+
 ## Instruções para Início
 
 Para iniciar o seu trabalho, siga estes passos:
