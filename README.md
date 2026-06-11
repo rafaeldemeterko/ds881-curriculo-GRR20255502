@@ -2,6 +2,20 @@
 
 Este repositório é um **template** para a atividade prática individual da disciplina DS881. O objetivo é aplicar conceitos de conteinerização, automação de pipeline CI/CD e governança de código em um cenário de projeto real (seu currículo ou portfólio profissional).
 
+## Currículo em Produção
+
+O currículo online será publicado pelo GitHub Pages em:
+
+```text
+https://rafaeldemeterko.github.io/ds881-curriculo-GRR20255502/
+```
+
+## Governança Aplicada
+
+A branch `main` está protegida por ruleset no GitHub. A configuração exige
+integração por Pull Request e aprovação dos checks automatizados `lint` e
+`build` antes do merge.
+
 ## Instruções para Início
 
 Para iniciar o seu trabalho, siga estes passos:
